@@ -10,13 +10,6 @@
 
 <style>
 
-#heresanid {
-  background-color: lightblue;
-  color: black;
-  padding: 40px;
-  text-align: center;
-}
-
 .aboutme {
   background-color: lightblue;
   color: rgb(17, 28, 51);
@@ -38,6 +31,21 @@
   padding: 30px;
   
 } 
+
+.button {
+  transition-duration: 0.4s;
+  background-color: lightblue;
+  font-size: 24px;
+  font-family:'Courier New', Courier, monospace;
+  border: 5px lightblue;
+}
+
+.button:hover {
+  background-color:rgb(17, 28, 51);
+  color:rgb(146, 154, 158);
+  text-align: center;
+
+}
 
 /* is this a comment too?? */
 </style>
@@ -71,15 +79,25 @@ so my resume is applicable for any job.</p>
   <p>should i make this a table</p>
 </div>
 
-<div id="heresanid">
-<a href="file:///C:/Users/ameli/about-me-project/about%20me.html">here's a link woo</a>
-<p> javascript is annoying</p>
-</div>
 
 <!-- Here's a comment! -->
 
+<div class="aboutme">
+  <h1 onhover='document.getElementById("demo").innerHTML = "hows this does it work"'>Messing With JS</h1>
+</div>
+<div class="regulartext">
+<p id="demo">let's attempt this shall we</p>
+
+
+<button class="button" onclick=i_hate_button_handlers() >good gosh this line is long</button>
+<a href="https://github.com/amelia-moore/about-me-project" class="button"> Link to Github</a>
+</div>
 <script>
-document.getElementByClass("newclass").innerHTML = "this should print";
+function i_hate_button_handlers() {
+  document.getElementById("demo").innerHTML = "button handlers aren't actually that terrible";
+  window.alert("wow this is gonna be terrible to test lol");
+  // note to self -- can use this to run bash project?
+}
 </script>
 
 
